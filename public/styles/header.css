@@ -1,0 +1,28 @@
+header {
+  background-color: #de9842;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 120px
+}
+.profile-pic {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+}
+.profile-name {
+  text-align: center;
+  position: absolute;
+  margin: auto;
+  top: 225px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 1%;
+}
