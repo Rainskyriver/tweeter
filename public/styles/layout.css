@@ -21,6 +21,21 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+main {
+  position: relative;
+  padding-top: 600px;
+}
+
+.container {
+  color: solid black;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
