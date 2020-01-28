@@ -24,7 +24,7 @@ body {
 
 main {
   position: relative;
-  padding-top: 600px;
+  padding-top: 500px;
 }
 
 .container {
@@ -59,22 +59,23 @@ article {
   width: 90%;
   transition: all .25s;
 }
-
+/*name*/
 article header{
   padding-bottom: 25px;
   font-weight: 300;
 }
-
+/*handle*/
 article header span{
   opacity: 0;
   font-weight: 300;
   float: right;
   transition: all .25s;
 }
+/*shows handle on hover*/
 article:hover header span{
   opacity: 1;
 }
-
+/*time posted*/
 article footer{
   font-size: 18px;
 }
