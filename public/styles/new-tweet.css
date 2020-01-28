@@ -26,6 +26,10 @@ textarea {
   height: 1.75em;
 }
 
+.below-zero {
+  color: red;
+}
+
 .counter {
   font-family: 'Bungee', sans-serif;
   float: right;
