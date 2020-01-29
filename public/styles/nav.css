@@ -11,6 +11,22 @@ nav span {
   font-family: 'Bungee', sans-serif;
 
   position: relative;
-  top: 1.5em;
-  left: 1.5em;
+  top: 40%;
+  left: 5%;
+
+  font-size: 36px;
+}
+.compose {
+  position: relative;
+  padding: 30px;
+  float: right;
+
+}
+.compose button {
+  display: block;
+  margin: 25px 45%;
+
+}
+.compose button:hover {
+  
 }
