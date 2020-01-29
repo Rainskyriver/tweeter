@@ -18,6 +18,8 @@ $(document).ready(function() {
       alert('EMPTY Stop! You violated the law. Pay the court a fine or server your sentence. Your stolen goods are now forfeit.')
     }
 
+    console.log($(this).text)
+
     $.ajax({
       method: "POST",
       url: "/tweets",
@@ -34,17 +36,17 @@ $(document).ready(function() {
     // setTimeout(() => {
     // })
   })
-
+  
   
   const createTweetElement = function(data) {
     const $returnTweet = $("<article>").addClass("tweet");
     const name = data.user.name;
     const handle = data.user.handle;
-    const content = data.content.text;
+    const contentSpan = `<span>${data.content.text}</span>`;
+    const escaped = $('<span>').text(data.content.text).html();
     $returnTweet.append(`
-    
     <header><img src="${data.user.avatars}">${name}<span>${handle}</span></header>
-    <span>${content}</span>
+    ${escaped}
     <hr>
     <footer>${data["created_at"]}</footer>
     `)
