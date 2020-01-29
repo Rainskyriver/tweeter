@@ -75,6 +75,11 @@ article header span{
 article:hover header span{
   opacity: 1;
 }
+/*Avatar*/
+article img {
+  height: 2em;
+  width: 2em;
+}
 /*time posted*/
 article footer{
   font-size: 18px;
