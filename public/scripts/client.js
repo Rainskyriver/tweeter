@@ -47,9 +47,13 @@ $(document).ready(function() {
   //toggle-form button
   const $toggleForm = $('#toggle-form');
   $($toggleForm).click(() => {
+    $warning = $('#warning')
     const $container = $('.container');
     $container.toggleClass('toggle-off')
     $('.new-tweet textarea').focus();
+    if (!$warning.is(':hidden')) {
+      $warning.hide();
+    }
   })
   
   const createTweetElement = function(data) {
