@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('textarea').keyup(function() {
     $(this).parent().find('.counter').text(140 - ($(this).val().length));
     let onOrOff = true;
-    if (parseInt($(this).parent().find('.counter').text()) <= 0) {
+    if (parseInt($(this).parent().find('.counter').text()) < 0) {
       onOrOff = true;
     } else {
       onOrOff = false;

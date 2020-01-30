@@ -4,7 +4,8 @@
   height: 400px;
   width: 100%;
   position: absolute;
-  top: 120px
+  top: 120px;
+  z-index: 2;
 }
 .profile-pic {
   position: absolute;

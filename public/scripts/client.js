@@ -9,16 +9,25 @@ $(document).ready(function() {
     event.preventDefault();
     const tweetText = ($(this).serialize());
     const $textarea = $('textarea')
+    const $warning = $('#warning');
     //above 140 characters
     if ($textarea.val().length > 140) {
-      alert('TOO LONG Stop! You violated the law. Pay the court a fine or server your sentence. Your stolen goods are now forfeit.')
+      const errMsg = "STOP! You've violated the law. You typed over 140 characters. Pay the court a fine or shorten your sentence. Your words are now forfeit.";
+      if ($warning.is(':hidden')) {
+        $warning.text(errMsg)
+        $warning.slideDown("slow");
+      }
+      return;
     }
     //empty text
     if ($textarea.val() === '') {
-      alert('EMPTY Stop! You violated the law. Pay the court a fine or server your sentence. Your stolen goods are now forfeit.')
+      const errMsg = "STOP! You've violated the law. You tried to submit a blank tweet. Pay the court a fine or enter your sentence. You can't stay silent forever.";
+      if ($warning.is(':hidden')) {
+        $warning.text(errMsg)
+        $warning.slideDown("slow");
+      }
+      return;
     }
-
-    console.log($(this).text)
 
     $.ajax({
       method: "POST",
@@ -29,12 +38,10 @@ $(document).ready(function() {
       $('#tweet-container').empty();
       loadTweets();
     })
-
+    
     //clear and keep focus
     $textarea.val('').focus();
-    //reload tweets without refreshing
-    // setTimeout(() => {
-    // })
+    $warning.hide();
   })
   
   //toggle-form button
@@ -60,8 +67,8 @@ $(document).ready(function() {
   }
   
   const renderTweets = function(tweets) {
-    for (const tweet of tweets) {
-      const $tweet = createTweetElement(tweet);
+    for (let i = tweets.length - 1; i >= 0; i--) {
+      const $tweet = createTweetElement(tweets[i]);
       $('#tweet-container').append($tweet);
     }
   }

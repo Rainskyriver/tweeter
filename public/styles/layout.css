@@ -36,7 +36,7 @@ main {
 }
 
 .toggle-off {
-  top: 325px;
+  top: 400px;
 }
 
 article:hover {
@@ -59,6 +59,7 @@ article {
   bottom: 0;
   width: 90%;
   transition: all .25s;
+  word-wrap: break-word;
 }
 /*name*/
 article header{
