@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
-  
+  //handling the submit button
   $('form').submit(function(event) {
     event.preventDefault();
     const tweetText = ($(this).serialize());
@@ -37,6 +37,13 @@ $(document).ready(function() {
     // })
   })
   
+  //toggle-form button
+  const $toggleForm = $('#toggle-form');
+  $($toggleForm).click(() => {
+    const $container = $('.container');
+    $container.toggleClass('toggle-off')
+    $('.new-tweet textarea').focus();
+  })
   
   const createTweetElement = function(data) {
     const $returnTweet = $("<article>").addClass("tweet");

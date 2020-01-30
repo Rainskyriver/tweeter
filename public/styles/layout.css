@@ -24,18 +24,19 @@ body {
 
 main {
   position: relative;
-  padding-top: 500px;
+  top: 500px;
 }
 
 .container {
   color: solid black;
   position: relative;
   margin: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
   width: 90%;
+  transition: all .25s;
+}
+
+.toggle-off {
+  top: 325px;
 }
 
 article:hover {
@@ -87,13 +88,12 @@ article footer{
 svg {
   float: right;
   padding: 2px;
-  fill: grey;
 }
 
 hr {
   margin-top: 25px;
   border: 0;
-  border: 3px solid darkslategrey;
+  border: 3px solid rgb(90, 90, 90);
   opacity: 1;
   border-radius: 5px;
 }

@@ -22,11 +22,17 @@ nav span {
   float: right;
 
 }
-.compose button {
+#toggle-form {
   display: block;
-  margin: 25px 45%;
-
+  margin: 15px 35%;
+  background:none;
+  border:none;
 }
-.compose button:hover {
-  
+
+.compose:hover #toggle-form {
+  animation: move 1s infinite alternate;
+}
+@keyframes move{
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
 }
