@@ -6,12 +6,13 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 nav span {
   font-family: 'Bungee', sans-serif;
 
   position: relative;
-  top: 40%;
+  top: 20%;
   left: 5%;
 
   font-size: 36px;
@@ -36,3 +37,22 @@ nav span {
   0%   { transform: translateY(0); }
   100% { transform: translateY(-10px); }
 }
+
+@media only screen and (max-width: 1023px) {
+  nav {
+    background-color: #de9842;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  nav span {
+    font-size: 5vw;
+  }
+  label {
+    font-size: 5vw;
+  }
+  .compose {
+    padding-top: 15px;
+  }
+} 

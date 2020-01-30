@@ -1,11 +1,12 @@
 #top-header {
   background-color: #de9842;
-  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
-  height: 400px;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  height: 350px;
   width: 100%;
   position: absolute;
   top: 120px;
   z-index: 2;
+  display: inline-block;
 }
 .profile-pic {
   position: absolute;
@@ -13,8 +14,7 @@
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-
+  bottom: 25px;
 }
 .profile-name {
   color: #FFFFFF;
@@ -24,7 +24,19 @@
   top: 225px;
   right: 0;
   left: 0;
-  bottom: 0;
-  width: 50%;
+  bottom: 25px;
+  width: 75%;
   height: 1%;
+}
+
+/* PHONE */
+@media only screen and (max-width: 768px) {
+}
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+  #top-header {
+    margin: 100px 50px;
+    width: 35%;
+    float: left;
+  }
 }
