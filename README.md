@@ -1,6 +1,6 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone that uses AJAX, jQuery, HTML5, and CSS. This page was built by none other than the legendary Lian Yelich in the Jan06 2020 Lighthouse Labs cohort. You will find that the design doesn't shy far from the specifications, but the small personal touches really give the project a nice flare.
+Tweeter is a simple, single-page Twitter clone that uses AJAX, jQuery, HTML5, and CSS. This page was built by none other than the legendary Lian Yelich in the Jan06 2020 Lighthouse Labs cohort. You will find that the design doesn't shy far from the specifications, but the small personal touches really give the project a nice flare. (If you don't understand the error messages, they're an Oblivion reference)
 
 ## Getting Started
 
