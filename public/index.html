@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- Set viewport for mobile -->
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-
-    <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
-    
-    <!-- App CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" >    
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    
-    <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    
-    <!-- App JS -->
-    <script type="text/javascript" src="scripts/client.js"></script>
-    <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />    
   </head>
   <body>
-    <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
       <div class="compose">
@@ -37,7 +21,6 @@
         </button>
       </div>
     </nav>
-
     <header id="top-header">
       <div>
         <img class="profile-pic" src="/images/profile-hex.png">
@@ -47,8 +30,6 @@
         <h2>Bob Loblaw</h2>
       </div>
     </header>
-
-    <!-- Page-specific (main) content here -->
     <main class="container toggle-off">
       <section class="new-tweet">
         <p id="warning">&#9888; Warning	&#9888;</p>
@@ -61,5 +42,9 @@
       <section id="tweet-container">
       </section>
     </main>
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>    
+    <script type="text/javascript" src="scripts/client.js"></script>
+    <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
   </body>
 </html>

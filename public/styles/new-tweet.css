@@ -5,13 +5,12 @@
   width: 90%;
   transition: .25s;
 }
-
 input {
   font-family: 'Bungee', sans-serif;
   background-color: #4056A1;
   color: #FFFFFF;
 }
-
+/* warning class for when the user tries to post an empty string, or a post above 140 characters */
 #warning {
   color: red;
   font-size: 24px;
@@ -20,7 +19,6 @@ input {
   text-align: center;
   display: none;
 }
-
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
@@ -34,16 +32,14 @@ textarea {
   display: block;
   transition: all .25s;
 }
-
-.below-zero {
-  color: red;
-}
-
 .counter {
   font-family: 'Bungee', sans-serif;
   float: right;
 }
-
+/* class toggle for when counter is below 0 */
+.below-zero {
+  color: red;
+}
 ::placeholder {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;

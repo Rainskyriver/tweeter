@@ -1,19 +1,9 @@
-/*
-* http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-* https://css-tricks.com/international-box-sizing-awareness-day/
-* Do not modify these two selectors, please
-*/
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -21,12 +11,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
 }
-
 main {
   position: relative;
   top: 500px;
 }
-
 .container {
   color: solid black;
   position: relative;
@@ -34,16 +22,10 @@ main {
   width: 90%;
   transition: all .25s;
 }
-
-.toggle-off {
-  top: 400px;
-}
-
 article:hover {
   opacity: 1;
   box-shadow: 5px 10px;
 }
-
 article {
   padding: 15px;
   border: 25px;
@@ -86,11 +68,12 @@ article img {
 article footer{
   font-size: 18px;
 }
+/* flag, heart, and retweet */
 svg {
   float: right;
   padding: 2px;
 }
-
+/* bar */
 hr {
   margin-top: 25px;
   border: 0;
@@ -98,7 +81,10 @@ hr {
   opacity: 1;
   border-radius: 5px;
 }
-
+/*class toggle for hiding 'new tweet'*/
+.toggle-off {
+  top: 400px;
+}
 /* Mobile */
 @media only screen and (max-width: 1024px) {
   .toggle-off {

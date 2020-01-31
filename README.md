@@ -1,12 +1,10 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
-
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+Tweeter is a simple, single-page Twitter clone that uses AJAX, jQuery, HTML5, and CSS. This page was built by none other than the legendary Lian Yelich in the Jan06 2020 Lighthouse Labs cohort. You will find that the design doesn't shy far from the specifications, but the small personal touches really give the project a nice flare.
 
 ## Getting Started
 
-1. Fork this repository, then clone your fork of this repository.
+1. Clone this repository.
 2. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
@@ -15,3 +13,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- momentjs
+- body-parser
+- md5
+- chance
+
+## Dev Dependencies
+- nodemon

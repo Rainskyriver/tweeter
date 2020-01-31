@@ -10,18 +10,15 @@ nav {
 }
 nav span {
   font-family: 'Bungee', sans-serif;
-
   position: relative;
   top: 20%;
   left: 5%;
-
   font-size: 36px;
 }
 .compose {
   position: relative;
   padding: 30px;
   float: right;
-
 }
 #toggle-form {
   display: block;
@@ -29,22 +26,22 @@ nav span {
   background:none;
   border:none;
 }
-
 .compose:hover #toggle-form {
   animation: move 1s infinite alternate;
 }
+/* Button animation */
 @keyframes move{
   0%   { transform: translateY(0); }
   100% { transform: translateY(-10px); }
 }
-
+/* Tablets */
 @media only screen and (max-width: 1023px) {
   nav {
     background-color: #de9842;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   }
 }
-
+/* Small phones */
 @media only screen and (max-width: 430px) {
   nav span {
     font-size: 5vw;

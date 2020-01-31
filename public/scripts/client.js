@@ -1,8 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 $(document).ready(function() {
   //handling the submit button
   $('form').submit(function(event) {
@@ -28,7 +23,7 @@ $(document).ready(function() {
       }
       return;
     }
-
+    //send post request to /tweets
     $.ajax({
       method: "POST",
       url: "/tweets",
@@ -38,12 +33,10 @@ $(document).ready(function() {
       $('#tweet-container').empty();
       loadTweets();
     })
-    
     //clear and keep focus
     $textarea.val('').focus();
     $warning.hide();
   })
-  
   //toggle-form button
   const $toggleForm = $('#toggle-form');
   $($toggleForm).click(() => {
@@ -55,7 +48,6 @@ $(document).ready(function() {
       $warning.hide();
     }
   })
-  
   const createTweetElement = function(data) {
     const $returnTweet = $("<article>").addClass("tweet");
     const name = data.user.name;
@@ -69,20 +61,18 @@ $(document).ready(function() {
     `)
     return $returnTweet;
   }
-  
   const renderTweets = function(tweets) {
     for (let i = tweets.length - 1; i >= 0; i--) {
       const $tweet = createTweetElement(tweets[i]);
       $('#tweet-container').append($tweet);
     }
   }
-  
   const loadTweets = function() {
     $.ajax('http://localhost:8080/tweets', { method: 'GET'})
     .then((tweets) => {
       renderTweets(tweets);
     })
   }
-
+  //function call for initial page load
   loadTweets();
 });
